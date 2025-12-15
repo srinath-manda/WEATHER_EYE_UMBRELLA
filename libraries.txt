@@ -1,0 +1,42 @@
+# Required Arduino Libraries for WEATHER_EYE_UMBRELLA
+# Install these libraries via Arduino IDE Library Manager (Sketch > Include Library > Manage Libraries)
+
+# Core WiFi and HTTP Libraries
+WiFi.h - Built-in (ESP32 Core)
+HTTPClient.h - Built-in (ESP32 Core)
+
+# GPS Module Library
+TinyGPSPlus - Version 1.0.2 or latest
+Author: Mikal Hart
+URL: https://github.com/mikalhart/TinyGPSPlus
+Usage: GPS parsing from NEO-6M module
+
+# Temperature and Humidity Sensor
+DHT sensor library - Version 1.4.4 or latest
+Author: Adafruit
+URL: https://github.com/adafruit/DHT-sensor-library
+Usage: DHT11 sensor data acquisition
+
+# GSM Module Library (SIM800L)
+StatefulGSMLib - Version 1.0.0 or latest
+Author: Custom/Community
+URL: https://github.com/vshymanskyy/StatefulGSMLib
+Usage: SIM800L modem management and SMS transmission
+Note: Ensure proper power supply (4.2V) for SIM800L
+
+# Optional Additional Libraries
+# ArduinoJson - For JSON parsing if cloud integration is extended
+# SPIFFS - For SD card logging capabilities
+
+# ESP32 Board Support
+Board: ESP32 Dev Module (1.0.6 or latest)
+Vendor: Espressif Systems
+URL: https://github.com/espressif/arduino-esp32
+
+# Installation Steps:
+# 1. Open Arduino IDE
+# 2. Go to Sketch > Include Library > Manage Libraries
+# 3. Search and install each library from the list above
+# 4. Restart Arduino IDE
+# 5. Select Tools > Board > ESP32 Dev Module
+# 6. Select correct COM port and upload sketch
